@@ -1,0 +1,11 @@
+.container {
+    background-color: rgb(234, 236, 239);
+}
+
+
+
+
+.fullImage {
+    margin: 1rem;
+    overflow: auto;
+}
