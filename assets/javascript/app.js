@@ -34,7 +34,7 @@ $(document).ready(function(){
     $('body').on('click', '.btn.btn-link', function(){
     
         var athlete = $(this).attr("data-name");
-        var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=Le2UREEC9T9vjEuuDOWrRcI7RsEGr4ZE&q=' + athlete +'&limit=10&offset=0&rating=PG&lang=en';
+        var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=Le2UREEC9T9vjEuuDOWrRcI7RsEGr4ZE&q=' + athlete +'&limit=12&offset=0&rating=PG&lang=en';
         
         $.ajax({
           url: queryURL,
@@ -51,18 +51,18 @@ $(document).ready(function(){
             gifArray.forEach(function(i){
               var fullImage = $('<div>');
               fullImage.addClass('col-sm-3');
-              fullImage.addClass('fullImage')
+              fullImage.addClass('card')
               
               var image = $('<img>');
               image.attr('src', i.images.fixed_height_still.url);
               image.attr('data-state', 'still');
               image.attr('data-still', i.images.fixed_height_still.url);
               image.attr('data-animate', i.images.fixed_height.url);
-              image.addClass('gif');
+              image.addClass('card-img-top gif');
               fullImage.append(image);
               
               var rating = $('<div>');
-              rating.addClass('rating');
+              rating.addClass('card-body');
               rating.text(i.rating);
               fullImage.append(rating);
 

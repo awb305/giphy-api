@@ -2,10 +2,21 @@
     background-color: rgb(234, 236, 239);
 }
 
-
-
-
-.fullImage {
+#athlete-form {
     margin: 1rem;
-    overflow: auto;
+    margin-left: 0px;
+}
+
+.mb-2 {
+    margin: 1rem;
+}
+
+
+.card {
+    margin: 1rem;
+   
+}
+
+.card-img-top{
+    margin-top: 1rem;
 }
