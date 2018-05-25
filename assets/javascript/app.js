@@ -63,7 +63,7 @@ $(document).ready(function(){
               
               var rating = $('<div>');
               rating.addClass('card-body');
-              rating.text(i.rating);
+              rating.text("Rating: " + i.rating);
               fullImage.append(rating);
 
               athleteDiv.append(fullImage);
